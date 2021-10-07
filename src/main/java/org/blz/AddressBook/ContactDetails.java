@@ -65,8 +65,19 @@ class Addressbookoptions
         ContactdetailsArray[item]=new ContactDetails(first,last,address,city,state,zip,phonenumber,email);
     }
 
+    public void delete(int e)
+    {
+        for(int i=e;i<entries-1;i++) {
+            int j=i+1;
+            ContactdetailsArray[i] = ContactdetailsArray[j];
+        }
+    }
 
 }
+
+
+
+
 
 
 
