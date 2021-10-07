@@ -60,6 +60,13 @@ class Addressbookoptions
 
         }
     }
+    public void edit(int item,String first, String last, String address, String city, String state, int zip, long phonenumber, String email)
+    {
+        ContactdetailsArray[item]=new ContactDetails(first,last,address,city,state,zip,phonenumber,email);
+    }
+
 
 }
+
+
 
